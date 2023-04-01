@@ -1,0 +1,78 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.main.WelcomeFragment" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/welcomeLabel"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Welcome to Shares Analyzer"
+                android:textSize="28dp"
+                android:textColor="#6200EE"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/tab1Label"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:background="#6200EE"
+                android:text="To view daily prices of desired shares please access the Shares page"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/tab2Label"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:background="#6200EE"
+                android:text="To compare prices of two selected shares please access the Analyse page"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text="How accurate are we:"
+                android:textSize="20dp"
+                android:textColor="#6200EE"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+
+        <ImageView
+            android:id="@+id/welcomePanel"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:adjustViewBounds="true" />
+    </TableLayout>
+</ScrollView>

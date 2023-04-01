@@ -1,0 +1,84 @@
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#FFFFFF"
+tools:context=".ui.main.DoubleSymbolFragment" >
+<TableLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:stretchColumns="1" >
+  <TableRow>
+    <TextView
+        android:id="@+id/firstShareLabel"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:text="Introduce first symbol" />
+    <EditText
+        android:id="@+id/firstShareField"
+        android:hint="e.g. SYN"
+        android:layout_span="4" />
+  </TableRow>
+  <TableRow>
+    <TextView
+        android:id="@+id/secondShareLabel"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:text="Introduce second symbol" />
+    <EditText
+        android:id="@+id/secondShareField"
+        android:hint="e.g. SYN"
+        android:layout_span="4" />
+  </TableRow>
+  <TableRow>
+    <TextView
+        android:id="@+id/findfirstDateLabel"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:text="Star Date:" />
+    <EditText
+        android:id="@+id/firstdateField"
+        android:hint="yyyy-MM-dd"
+        android:layout_span="4" />
+  </TableRow>
+  <TableRow>
+    <TextView
+        android:id="@+id/findsecondDateLabel"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:text="End Date:" />
+    <EditText
+        android:id="@+id/seconddateField"
+        android:hint="yyyy-MM-dd"
+        android:layout_span="4" />
+  </TableRow>
+  <TableRow>
+  <Button
+  android:id="@+id/analyseOK"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_column="1"
+  android:background="#AAAAFF"
+  android:text="analyse"
+  android:onClick="oK"
+  />
+  <Button
+  android:id="@+id/analyseCancel"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="#FFAAAA"
+  android:layout_column="3"
+  android:text="Cancel"
+  android:onClick="cancel"
+  />
+  </TableRow>
+
+  <ImageView
+     android:id="@+id/analyseResult"
+     android:layout_height="500dp"
+     android:layout_width="fill_parent"
+     android:adjustViewBounds="true" />
+</TableLayout>
+</ScrollView>

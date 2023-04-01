@@ -1,0 +1,78 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.main.SingleSymbolFragment" >
+
+  <TableLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:stretchColumns="1" >
+
+    <TableRow>
+      <TextView
+          android:id="@+id/dateFromLabel"
+          android:textStyle="bold"
+          android:background="#FFFFFF"
+          android:text="From Date:" />
+      <EditText
+          android:id="@+id/dateFromField"
+          android:hint="yyyy-MM-dd"
+          android:layout_span="4" />
+    </TableRow>
+
+    <TableRow>
+      <TextView
+          android:id="@+id/dateToLabel"
+          android:textStyle="bold"
+          android:background="#FFFFFF"
+          android:text="To Date:" />
+      <EditText
+          android:id="@+id/dateToField"
+          android:hint="yyyy-MM-dd"
+          android:layout_span="4" />
+    </TableRow>
+
+    <TableRow>
+      <TextView
+          android:id="@+id/symbolLabel"
+          android:textStyle="bold"
+          android:background="#FFFFFF"
+          android:text="Symbol:" />
+      <EditText
+          android:id="@+id/symbolField"
+          android:hint="eg. SYN"
+          android:layout_span="4" />
+    </TableRow>
+
+    <TableRow>
+      <Button
+          android:id="@+id/oK"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_column="1"
+          android:background="#AAAAFF"
+          android:text="Search"
+          android:onClick="oK"
+          />
+      <Button
+          android:id="@+id/cancel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#FFAAAA"
+          android:layout_column="3"
+          android:text="Cancel"
+          android:onClick="cancel"
+          />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true" />
+  </TableLayout>
+</ScrollView>

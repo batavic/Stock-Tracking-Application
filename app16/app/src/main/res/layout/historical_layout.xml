@@ -1,0 +1,124 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.main.HistoricalFragment" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/dateLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text="Date:" />
+            <EditText
+                android:id="@+id/dateField"
+                android:hint="yyyy-MM-dd"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/symbolLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text="Symbol:" />
+            <EditText
+                android:id="@+id/symbolField"
+                android:hint="eg. SYN"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#AAAAFF"
+                android:text="Search"
+                android:onClick="search"
+                />
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFAAAA"
+                android:layout_column="3"
+                android:text="Cancel"
+                android:onClick="cancel"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/openLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "Open:" />
+            <TextView
+                android:id="@+id/openField"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/highLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "High:" />
+            <TextView
+                android:id="@+id/highField"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/lowLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "Low:" />
+            <TextView
+                android:id="@+id/lowField"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/closeLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "Close:" />
+            <TextView
+                android:id="@+id/closeField"
+                android:layout_span="4" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/adjcloseLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "Adj Close:" />
+            <TextView
+                android:id="@+id/adjcloseField"
+                android:layout_span="4" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/volumeLabel"
+                android:textStyle="bold"
+                android:background="#FFFFFF"
+                android:text= "Volume:" />
+            <TextView
+                android:id="@+id/volumeField"
+                android:layout_span="4" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
